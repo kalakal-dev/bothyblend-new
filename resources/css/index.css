@@ -1,6 +1,23 @@
+
+/* Font Import */
+@font-face {
+    font-family: 'Norwester';
+    src: local('Norwester Regular'), local('Norwester-Regular'),
+        url('C/Users/aldre/Repositories/bothyblend-new/resources/fonts/Norwester-Regular.woff2') format('woff2'),
+        url('C/Users/aldre/Repositories/bothyblend-new/resources/fonts/Norwester-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Norwester';
+    src: url(resources\fonts\norwester.ttf) format("truetype");
+}
+
 /* Variables */
 :root {
-    
+    --logo-font: 'Norwester', sans-serif;
 }
 
 /* Universal Styles */
@@ -14,4 +31,9 @@ html {
 
 html, body {
     min-height: 100%;
+}
+
+.logo {
+    font-family: var(--logo-font);
+    text-transform: uppercase;
 }
