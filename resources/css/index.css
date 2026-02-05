@@ -2,22 +2,20 @@
 /* Font Import */
 @font-face {
     font-family: 'Norwester';
-    src: local('Norwester Regular'), local('Norwester-Regular'),
-        url('C/Users/aldre/Repositories/bothyblend-new/resources/fonts/Norwester-Regular.woff2') format('woff2'),
-        url('C/Users/aldre/Repositories/bothyblend-new/resources/fonts/Norwester-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Norwester';
-    src: url(resources\fonts\norwester.ttf) format("truetype");
+    src: url('https://raw.githubusercontent.com/kalakal-dev/bothyblend-new/refs/heads/main/resources/fonts/norwester.woff') format("woff");
 }
 
 /* Variables */
 :root {
+    /* Fonts */
     --logo-font: 'Norwester', sans-serif;
+
+    /* Colours */
+    --background-color: #f2f1eb;
+    --bothyblend-title-color: #61642b;
+    --accent1-color: #7b3a61;
+    --accent2-color: #321f12;
+    --gold-detail-color: #ba9d4a;
 }
 
 /* Universal Styles */
@@ -33,7 +31,50 @@ html, body {
     min-height: 100%;
 }
 
-.logo {
+/* TEXT PRESETS */
+/* Text Sizing */
+.size-24 {
+    font-size: 1.5rem;
+}
+
+.size-32 {
+    font-size: 2rem;
+}
+
+.size-64 {
+    font-size: 4rem;
+}
+
+/* Text Styles */
+.logo-text-style {
     font-family: var(--logo-font);
+    letter-spacing: 0.3rem;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.description-text-style {
+    font-family: 'Anonymous Pro', monospace;
+    text-transform: uppercase;
+}
+
+/* COLOR PRESETS */
+.page-background-color {
+    background-color: var(--background-color);
+}
+
+.title-text-color {
+    color: var(--bothyblend-title-color);
+}
+
+/* PAGE STRUCTURE PRESETS */
+.page-wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
